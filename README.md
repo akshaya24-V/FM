@@ -66,17 +66,64 @@ MODEL GRAPH:
 
 Program
 
+Am=3;
+
+fm=260;
+
+Ac=6;
+
+fc=2600;
+
+fs=26000;
+
+t=0:1/fs:1/fm;
+
+m1=Am*cos(2*3.14*fm*t);
+
+subplot(4,1,1);
+
+plot(t,m1);
+
+c1=Ac*cos(2*3.14*fc*t);
+
+subplot(4,1,2);
+
+plot(t,c1);
+
+m2=Am*cos(1.57-2*3.14*fm*t);
+
+c2=Am*cos(1.57-2*3.14*fc*t);
+
+a=m1.*c1;
+
+b=m2.*c2;
+
+c=a+b;
+
+subplot(4,1,3);
+
+plot(t,d);
+
+d=a-b;
+
+subplot(4,1,4);
+
+plot(t,c);
+
 
 Output Waveform
 
+![WhatsApp Image 2025-10-08 at 14 34 17_c80be6ea](https://github.com/user-attachments/assets/70a240f0-df4f-4fc2-beb7-af0314662f90)
 
 
 Tabulation
 
+![WhatsApp Image 2025-10-08 at 14 35 27_8bf643c2](https://github.com/user-attachments/assets/050b710b-061f-4325-9216-dec8db69a6f0)
 
 
 Calculation
 
+![WhatsApp Image 2025-10-08 at 19 38 54_9e425ea6](https://github.com/user-attachments/assets/8079667d-bc98-42e5-ac90-4c5526ac814a)
 
 
 Frequency Deviation Practical = 
